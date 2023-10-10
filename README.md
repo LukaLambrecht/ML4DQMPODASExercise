@@ -8,10 +8,10 @@ This is a tutorial covering the following topics:
 
 How to get this notebook running:  
 - Open a terminal and connect to the DESY system with the account you received (e.g. ssh schoolXX@naf-cms.desy.de).
-- Clone this repository [here](https://github.com/CMSTrackerDPG/ML4DQMPODASExercise/tree/desy-podas) in your DESY workspace. Make sure to have the `desy-podas` branch, not the `main` branch.
+- Clone this repository [here](https://github.com/CMSTrackerDPG/ML4DQMPODASExercise/tree/desy-podas) in your DESY workspace. Make sure to have the `desy-podas` branch, not the `main` branch. You can do this as follows in the terminal: `git clone --branch desy-podas https://github.com/CMSTrackerDPG/ML4DQMPODASExercise.git`
 - Open a DESY JupyterHub session [here](https://naf-jhub.desy.de/hub/spawn). Log in with your received account, select CMS for Primary Group, the rest can be left at default, or use JupyterLab mode instead of Classical Notebook mode if you prefer. It can take 30 seconds for the session to start.
 - Open the exercise notebook from the JupyterHub session. There are a few further steps, explained in the notebook itself but repeated below.
-- There is one dedicated repository with useful tools that you will need to install manually, namely [this one](https://github.com/LukaLambrecht/ML4DQMDC-PixelAE). Clone it to your DESY workspace. Then modify the path in the first notebook code cell to wherever you downloaded the repository in order for all the imports later on in the script to work.
+- There is one dedicated repository with useful tools that you will need to install manually, namely [this one](https://github.com/LukaLambrecht/ML4DQMDC-PixelAE). Clone it to your DESY workspace (as follows: `git clone https://github.com/LukaLambrecht/ML4DQMDC-PixelAE`). Then modify the path in the first notebook code cell to wherever you downloaded the repository in order for all the imports later on in the script to work.
 - For all other dependencies, we prepared a virtual environment that contains all of them. The steps below show how to activate it.
 - In your terminal, enter the following command: `source /nfs/dust/cms/group/cmsdas2023/TRK-DQM/venv_ml4dqm_podas2023/bin/activate` to activate the virtual environment in that terminal.
 - Next, run this command: `ipython kernel install --user --name=venv_ml4dqm_podas2023` to register the environment as an ipython kernel.
